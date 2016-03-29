@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:id="@+id/RelativeLayout1" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:baselineAligned="false" 
+    android:orientation="vertical" 
+    tools:context=".MainActivity" > 
+    
+    <fragment android:id="@+id/first" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        class="com.home.android.fragmentedaudio.AudioItem" />
+
+    <fragment
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/first"
+        class="com.home.android.fragmentedaudio.AudioItem" />
+
+    <fragment
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/second"
+        class="com.home.android.fragmentedaudio.AudioItem" />
+    
+</RelativeLayout> 
+            
